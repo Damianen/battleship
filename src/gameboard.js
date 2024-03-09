@@ -33,6 +33,8 @@ class GameBoard {
             this.board[x][y].ship = ship;
             this.ships.push(ship);
         }
+
+        return true;
     }
 
     receiveAttack(x, y) {
@@ -60,5 +62,9 @@ class GameBoard {
         }
 
         return true;
+    }
+
+    renderBoard() {
+        
     }
 }

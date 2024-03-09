@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.boards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+[class^="row"] {
+    display: flex;
+}
+
+[class^="cell"] {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ship {
+    background-color: rgb(49, 49, 49);
+}
+
+.hit {
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: 0%;
+}

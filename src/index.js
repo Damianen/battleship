@@ -1,4 +1,5 @@
+import './style.css';
+import renderBoard from './DOM';
 
-function renderGrid() {
-
-}
+renderBoard(document.querySelector(".field-1"));
+renderBoard(document.querySelector(".field-2"));
