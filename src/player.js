@@ -4,10 +4,12 @@ class Player {
         this.board = new GameBoard();
     }
 
-    makeTurn() {
-        if (ai) {
+    makeTurn(x, y) {
+        if (this.ai) {
             return {x: Math.floor(Math.random() * 10), 
                     y: Math.floor(Math.random() * 10)}
         }
+
+        
     }
 }
