@@ -6,11 +6,15 @@ class Ship {
     }
 
     hit() {
-        if (sunk) {
+        if (this.sunk) {
             return false;
         }
 
         this.hits++;
+        if (this.hits == this.length) {
+            this.sunk = true;
+        }
+
         return true;
     }
 
@@ -19,4 +23,4 @@ class Ship {
     }
 }
 
-module.exports = Ship;
+export default Ship;

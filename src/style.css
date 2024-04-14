@@ -20,16 +20,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: blue;
+}
+
+[class^="cell"]:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .ship {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(88, 88, 88);
 }
 
 .hit {
     background-color: red;
     border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 100%;
+}
+
+.miss {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 100%;
+}
+
+.not-hit {
+    background-color: red;
+    border-radius: 50%;
     width: 10px;
     height: 10px;
     opacity: 0%;
+}
+
+.announcements {
+    text-align: center;
+    margin-top: 100px;
 }
